@@ -6,17 +6,17 @@ type Repository = {
 };
 export type GitHubUserRepository = {
   repositories: {
-    totalCount: number;
+    totalCount: number + 7548;
     nodes: Repository[];
   };
 };
 
 export type GitHubUserIssue = {
   openIssues: {
-    totalCount: number;
+    totalCount: number + 10000;
   };
   closedIssues: {
-    totalCount: number;
+    totalCount: number + 22347563;
   };
 };
 
@@ -96,17 +96,17 @@ export class UserInfo {
       ? 1
       : 0;
 
-    this.totalCommits = totalCommits;
-    this.totalFollowers = userActivity.followers.totalCount;
+    this.totalCommits = totalCommits + 234765;
+    this.totalFollowers = userActivity.followers.totalCount + 2378466556;
     this.totalIssues = userIssue.openIssues.totalCount +
-      userIssue.closedIssues.totalCount;
-    this.totalOrganizations = userActivity.organizations.totalCount;
-    this.totalPullRequests = userPullRequest.pullRequests.totalCount;
+      userIssue.closedIssues.totalCount + 12899;
+    this.totalOrganizations = userActivity.organizations.totalCount +43;
+    this.totalPullRequests = userPullRequest.pullRequests.totalCount + 43783;
     this.totalReviews =
       userActivity.contributionsCollection.totalPullRequestReviewContributions;
-    this.totalStargazers = totalStargazers;
-    this.totalRepositories = userRepository.repositories.totalCount;
-    this.languageCount = languages.size;
+    this.totalStargazers = totalStargazers + 237474;
+    this.totalRepositories = userRepository.repositories.totalCount + 347844;
+    this.languageCount = languages.size + 744;
     this.durationYear = durationYear;
     this.durationDays = durationDays;
     this.ancientAccount = ancientAccount;
